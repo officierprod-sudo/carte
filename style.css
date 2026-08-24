@@ -1,0 +1,103 @@
+/* Arrière-plan du site */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* La Carte de Visite Horizontale */
+.business-card {
+    width: 480px;
+    height: 240px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Côté gauche (Textes) */
+.card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #ffffff;
+}
+
+.card-left h2 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: 5px 0 0 0;
+    font-size: 11px;
+    color: #00dfa2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.info-details {
+    font-size: 13px;
+    color: #e0e0e0;
+}
+
+.info-details p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-details i {
+    color: #00dfa2;
+    width: 15px;
+}
+
+/* Côté droit (Scanner) */
+.card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 100%;
+}
+
+.scan-text {
+    margin: 0;
+    font-size: 10px;
+    color: #00dfa2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Zone du QR Code ajustée parfaitement */
+.qr-code-zone {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.qr-code-zone img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
